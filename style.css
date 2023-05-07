@@ -1,0 +1,441 @@
+/* This is a comment in CSS, it won't affect the code but can help you add notes */
+/* Use colors to highlight different parts of your code */
+
+/* Global styles */
+/* Use a different color to highlight global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #faf5f5;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Header */
+  /* Use a different color to highlight header styles */
+  header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  
+  header .logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #f2f2f2;
+  }
+  
+  header .toggle {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    header nav {
+      margin-top: 20px;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header nav ul li {
+      margin-bottom: 10px;
+    }
+  
+    header .toggle {
+      display: block;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+  
+    header .toggle-btn {
+      width: 30px;
+      height: 3px;
+      background-color: #333;
+      margin: 6px 0;
+    }
+  
+    header nav.active ul {
+      display: block;
+    }
+  }
+  
+  
+  /* Hero section */
+  /* Use a different color to highlight hero section styles */
+  
+  #hero {
+    background-image: url(pic\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+  
+  #hero p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+  
+  #hero .btn {
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #hero .btn:hover {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+  }
+  
+  
+  /* About section */
+
+
+  #opening-times {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+  }
+  
+  #opening-times h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #opening-times ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  #opening-times li {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  #opening-times li::before {
+    content: "\2022";
+    color: #666;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #opening-times li {
+      font-size: 16px;
+    }
+  }
+  
+  /* Use a different color to highlight about section styles */
+  #about {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+    
+  }
+  
+  #about h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 40px;
+  }
+  
+  #about p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  #about img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  
+  /* Services section */
+  /* Use a different color to highlight services section styles */
+  
+  
+  /* Contact section */
+  /* Use a different color to highlight contact section styles */
+
+  /* Services Section */
+#services {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .services-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .service {
+    width: calc(25% - 20px);
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .service:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .service p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #666;
+  }
+  
+  .service .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .service .btn:hover {
+    background-color: #555;
+  }
+  
+
+  
+    
+    /* Footer /
+    / Use a different color to highlight footer styles */
+    footer {
+    background-color: #333;
+    color: #FFF;
+    text-align: center;
+    padding: 20px;
+    }
+    
+    footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    }
+    
+    /* Media Queries /
+    / Use a different color to highlight media queries */
+    @media screen and (max-width: 768px) {
+    header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    nav ul {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+    }
+    
+    nav ul li {
+    margin: 0 5px;
+    }
+    
+    
+    
+    
+   
+    
+    
+  
+    }
+    /* Contact Section */
+#contact {
+    background-color: #fff;
+    padding: 60px 0;
+  }
+  
+  #contact h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contact-wrapper form {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+  
+  .contact-wrapper .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-wrapper label {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .contact-wrapper input[type="text"],
+  .contact-wrapper input[type="email"],
+  .contact-wrapper textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f7f7f7;
+  }
+  
+  .contact-wrapper textarea {
+    height: 150px;
+  }
+  
+  .contact-wrapper button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .contact-wrapper button:hover {
+    background-color: #555;
+  }
+  
+  .contact-wrapper .contact-info {
+    width: calc(50% - 20px);
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-wrapper p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .contact-wrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact-wrapper li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .contact-wrapper li i {
+    margin-right: 10px;
+    color: #333;
+    font-size: 20px;
+  }
+  
+  
